@@ -32,3 +32,8 @@ if command -v git >/dev/null 2>&1; then
     alias gp='git push'
     alias gpl='git pull'
 fi
+
+
+countdirs() {
+    find "${1:-.}" -mindepth 1 -type d | wc -l
+}
