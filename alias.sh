@@ -37,3 +37,7 @@ fi
 countdirs() {
     find "${1:-.}" -mindepth 1 -type d | wc -l
 }
+
+tblog() {
+    tensorboard --logdir "${1:-.}"
+}
